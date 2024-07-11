@@ -1,0 +1,85 @@
+                          CONFORMAL (R)
+                   Version 20.10-p100 (01-May-2020) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2019. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1424 days old. You can download the latest version from http://downloads.cadence.com.
+
+0
+CPU time     : 0.92    seconds
+Elapse time  : 185     seconds
+Memory usage : 260.43  M bytes
+// Command: read_library slow.lib -lib -revised
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 1.25    seconds
+Elapse time  : 192     seconds
+Memory usage : 278.06  M bytes
+// Command: read_design bound_flasher.v -verilog -golden
+// Parsing file bound_flasher.v ...
+// Golden root module is set to 'bound_flasher'
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:2)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.35    seconds
+Elapse time  : 209     seconds
+Memory usage : 285.09  M bytes
+// Command: read_design bound_flasher_m.v -verilog -revised
+// Parsing file bound_flasher_m.v ...
+// Revised root module is set to 'bound_flasher'
+// Warning: (RTL14) Signal has input but it has no output (occurrence:1)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.49    seconds
+Elapse time  : 227     seconds
+Memory usage : 290.67  M bytes
+// Command: set_mapping_method -name only
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+CPU time     : 1.78    seconds
+Elapse time  : 270     seconds
+Memory usage : 317.87  M bytes
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     36        55      
+--------------------------------------------------------------------------------
+Revised           3      16     36        55      
+================================================================================
+0
+// Command: map_key_points
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     36        55      
+--------------------------------------------------------------------------------
+Revised           3      16     36        55      
+================================================================================
+0
+// Command: add_compared_points -all
+// 52 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           16     36        52      
+================================================================================
+0
